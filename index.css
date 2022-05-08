@@ -1,0 +1,266 @@
+/*******************************
+            Global
+*******************************/
+
+html, body {
+  font-family: "Lato", Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  min-height: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", Times New Roman, serif;
+}
+
+
+.button {
+max-width: 156px;
+height: 50px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.08) 100%), #4DAF7C;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+text-decoration: none;
+justify-content: center;
+border-radius: 3px;
+}
+
+
+
+/*******************************
+              Page
+*******************************/
+.hero {
+background-color: #DFF1E8;
+padding-top: 45px;
+padding-bottom: 72px;
+}
+.hero-section {
+display: flex;
+padding-top: 52px;
+}
+.hero-info, .hero-image {
+  flex: 1 0 50%;
+}
+.hero-info {
+display: flex;
+flex-direction: column;
+justify-content: center; 
+}
+.hero-info h1 {
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+max-width: 409px;
+line-height: 47px;
+margin: 0 0 39px;
+}
+.hero-info p {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 32px;
+max-width: 409px;
+margin-top: 0px;
+margin-bottom: 50px;
+}
+.hero-info .button {
+ margin-bottom: 30px;
+}
+.hero-image img {
+max-width: 578px;
+width: 100%;
+margin-top: -15px;
+}
+
+/* page */
+.page {
+padding-top: 110px;
+}
+.card-row {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+column-gap: 30px;
+row-gap: 73px;
+}
+.cards {
+max-width: 340px;
+max-height: 386px;
+background: #FFFFFF;
+box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
+border-radius: 0px 0px 8px 8px;
+display: flex;
+flex-direction: column;
+border-radius: 4px;
+}
+.card-info {
+padding: 24px 30px;
+min-height: 164px;
+}
+.card-info h1 {
+margin: 0px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+margin-bottom: 17px;
+}
+.card-info p {
+margin: 0px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+}
+.card-img {
+background-color: #2C2E30;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 222px;
+}
+
+/* cta */
+.cta-row {
+min-height: 253px;
+display: flex;
+justify-content: space-around;
+margin-top: 110px;
+}
+.cta-bg {
+background-image: url(images/cta-bg.png);
+background-position: bottom;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.divider {
+width: 1px;
+min-height: 100%;
+max-height: 148px;
+background: rgb(0 0 0 / 10%);
+display: inline-flex;
+}
+.cta-column {
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+.cta-column p {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 31px;
+text-align: center;
+max-width: 309px;
+color: #7C7C7C;
+}
+.cta-column a {
+color: #339366;
+text-decoration: none;
+}
+
+
+/* footer */
+.footer {
+min-height: 59px;
+background: #202020;
+display: flex;
+align-items: center;
+}
+.inner-footer {
+display: flex;
+align-items: center;
+}
+.inner-footer span {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+margin-left: 18px;
+color: #646464;
+}
+
+
+/*******************************
+         Responsive
+*******************************/
+
+/* Small Monitor */
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+
+  .card-row {
+    justify-content: center;
+  }
+  .cards {
+    max-width: 390px;
+  }
+
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+ 
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-info {
+    margin-bottom: 30px;
+  }
+  .hero-info h1 {
+    max-width: 100%;
+  }
+  .hero-info p {
+    max-width: 100%;
+  }
+  .card-row {
+    justify-content: center;
+  }
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  .cta-column {
+    width: 100%;
+  }
+  .cta-column p {
+    max-width: 100%;
+  }
+  .divider {
+    width: 140px;
+    max-height: 1px;
+    min-height: 1px;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
